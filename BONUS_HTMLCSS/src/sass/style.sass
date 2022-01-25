@@ -1,0 +1,711 @@
+@import "./_variables"
+@import "./_icons"
+@import "./_fonts"
+@import "../../node_modules/bootstrap/scss/bootstrap"   
+
+
+html, body
+    overflow-x: hidden
+body
+    font-family: 'Rubik'
+
+.info
+    background: linear-gradient(90deg, #166cc9 0%, rgba(93,219,255,1) 100%)
+    ul
+        width: 60%
+        margin: auto    
+    li
+        list-style: none
+        border-right: 1px solid #ffffff50
+
+
+nav 
+    background-color: #FFF8EB
+    
+    .dropdown-toggle
+        &::after
+            display: none
+
+    i
+        font-size: 12px
+
+    button
+        background: linear-gradient(90deg, #c91652 0%, #ff8b5d 100%)
+        border: none
+    
+    li
+        font-weight: bold
+    a
+        color: #334c5f !important
+
+.banner
+    width: 100%
+    height: 80vh
+    background-image: url("../../public/img/banner/bg.jpg") 
+    background-size: cover   
+    overflow: hidden !important
+    .container
+        width: 60%
+        height: 100%
+    .card
+        border: none
+        width: 80px
+        height: 100px
+        
+
+        .card-body
+            padding: 0
+
+        #card1, #card2, #card3, #card4
+            height: 60px
+            border-top-left-radius: 3px
+            border-top-right-radius: 3px
+
+        #card1
+            background: linear-gradient(90deg, #c91652 0%, #ff8b5d 100%) !important
+
+        #card1_p
+            color: #c91652
+            
+        #card2
+            background: linear-gradient(90deg, #3976d1 0%, #63c0f7 100%) !important  
+
+        #card2_p
+            color: #3976d1
+            
+        #card3
+            background: linear-gradient(90deg, #a455ff 0%, #3a2083 100%) !important
+
+        #card3_p
+            color: #a455ff
+
+        #card4
+            background: linear-gradient(90deg, #35edfa 0%, #329edd 100%) !important
+
+        #card4_p
+            color: #35edfa 
+
+    h1
+        font-weight: 1000
+    .btn
+        background: linear-gradient(90deg, #3976d1 0%, #63c0f7 100%) !important  
+        border: none
+
+    .img_banner
+        transform: translate(-200px, 50px)
+
+.about
+    background-color: #FFF8EB
+    
+    .about_img
+        border: 10px solid white
+        border-radius: 10px
+        box-shadow: 0px 0px 50px #00000067
+        z-index: 2
+
+    .btn
+        background: linear-gradient(90deg, #c91652 0%, #ff8b5d 100%) !important 
+        border: none
+        &:nth-of-type(2)
+           background: linear-gradient(90deg, #3976d1 0%, #63c0f7 100%) !important 
+
+    h2      
+        color:#e7346f
+        z-index: 2
+    h4
+        letter-spacing: 5px
+    p
+        width: 70%
+        line-height: 30px
+    
+    .shape
+        position: absolute
+        right: 0
+
+.schedule
+    background-image: url("../../public/img/event/01.jpg") 
+    background-size: cover
+    h2      
+        color:#e7346f
+        z-index: 2
+    h4
+        letter-spacing: 5px
+
+    .accordion
+        button
+            background-color: #ffffff28 !important
+            color:#ffffff
+            font-weight: bold
+        .accordion-item
+            background-color: #ffffff00 !important
+        .accordion-button:not(.collapsed)
+            background-color: #ffffff !important
+            color:#e7346f
+            &::after
+                background-image: url("../../public/img/icon2.png")
+
+        #dinner
+            &::after
+                background-image: none
+                content: "1:00 Pm - 2:00 Pm"
+                font-size: 14px
+                width: 150px
+
+        #title
+            background-color: white !important
+            color:#e7346f
+            border-top: 4px solid#e7346f
+            border-radius: 5px
+            font-size: 22px
+            &::after
+                background-image: none
+                width: 1px
+                margin: 0px
+
+        .accordion-body
+            background-color: #ffffff !important
+        .accordion-button
+            &::after
+                background-image: url("../../public/img/icon.png")
+        .icon_members
+            img
+                border: 3px solid white 
+                border-radius: 100%
+
+        .text_accordion
+            width: 80%
+            color: #000000a8
+            i
+                color:#e7346f
+    .btn
+        background: linear-gradient(90deg, #3976d1 0%, #63c0f7 100%) !important 
+        border: none
+
+.speakers
+    background-color: #FFF8EB
+    overflow: hidden !important
+    .shape
+        position: absolute
+        right: 0
+        max-height: 70vh
+        overflow: hidden !important
+        
+    h2      
+        color:#e7346f
+        position: relative
+    h4
+        letter-spacing: 5px
+        position: relative
+    .container
+        position: relative
+        color: #263249b9
+    .card_s
+        background-color: #FFF8EB
+        border: 1px solid #f7ead4
+
+    i
+        height: 34px
+        width: 34px
+        border-radius: 100%
+        display: flex
+        justify-content: center
+        align-items: center
+        color: white
+
+    .fa-facebook-f
+        background-color: #214b81
+    
+    .fa-twitter
+        background-color: #36a7db
+
+    .fa-instagram
+        background-color: #c03261
+
+    .btn
+        background: linear-gradient(90deg, #3976d1 0%, #63c0f7 100%) !important 
+        width: auto
+        border: none
+
+.sponsors
+    background-image: url("../../public/img/event/01.jpg") 
+    background-size: cover
+    h2      
+        color:#e7346f
+        z-index: 2
+    h4
+        color: #ffffff8c !important
+        letter-spacing: 5px
+
+    .btn
+        background: linear-gradient(90deg, #3976d1 0%, #63c0f7 100%) !important 
+        width: auto
+        border: none
+
+    .img-spon
+        height: 100px
+        max-width: 150px !important
+
+        img
+            max-width: 150px !important
+
+.pricing
+    background-color: #FFF8EB
+    overflow: hidden !important
+    .shape
+        position: absolute
+        right: 0
+        overflow: hidden !important
+
+    h2      
+        color:#e7346f
+        position: relative
+    h4
+        letter-spacing: 5px
+        position: relative
+    .container
+        position: relative
+        color: #263249b9
+    
+    .p_card
+        background-color: white
+
+    .row
+        width: 100%
+
+    .p_card-top
+        position: relative
+    .p_card-top-img
+        width: 100%
+        img
+            width: 100%
+            border-top-left-radius: 10px
+            border-top-right-radius: 10px
+
+    .pct-text
+        position: absolute
+        top: 30%
+        left: 30%
+
+    ul
+        list-style: none
+        font-size: 14px
+
+    #fa-blue   
+        color: #3976d1
+    
+    #fa-pink   
+        color: #e7346f
+
+    #fa-purple   
+        color: #6524b9
+    
+    #fa-1p
+        position: absolute
+        color: #ffffff
+        background: linear-gradient(90deg, #3976d1 0%, #63c0f7 100%) !important 
+        height: 40px
+        width: 40px
+        font-size: 10px
+        display: flex
+        justify-content: center
+        align-items: center
+        border-radius: 100%
+
+    #fa-2p
+        position: absolute
+        color: #ffffff
+        background: linear-gradient(90deg, #c91652 0%, #ff8b5d 100%) !important 
+        height: 40px
+        width: 40px
+        font-size: 10px
+        display: flex
+        justify-content: center
+        align-items: center
+        border-radius: 100%
+
+    #fa-3p
+        position: absolute
+        color: #ffffff
+        background: linear-gradient(90deg, #6524b9 0%, #944fee 100%) !important 
+        height: 40px
+        width: 40px
+        font-size: 10px
+        display: flex
+        justify-content: center
+        align-items: center
+        border-radius: 100%
+    .p_card-footer
+        border-top: 1px solid #00000017
+        .col-6
+            &:nth-of-type(2)
+                border-left: 1px solid #00000017
+
+.gifts
+    background-image: url("../../public/img/event/01.jpg") 
+    background-size: cover
+    h2      
+        color:#e7346f
+        z-index: 2
+    h4
+        color: #ffffff8c !important
+        letter-spacing: 5px
+
+    .btn
+        background: linear-gradient(90deg, #3976d1 0%, #63c0f7 100%) !important 
+        width: auto
+        border: none  
+        margin-top: 30px
+
+    .row
+        width: 65%
+        margin: auto
+        p   
+            margin-top: 40px
+            font-size: 16px
+            line-height: 30px
+    ul
+        list-style: none
+        padding: 0px
+        line-height: 40px
+    .img_gifts   
+        height: 470px
+        position: relative
+        
+        img
+            height: 100%    
+            top: 30px
+            position: absolute
+
+.news
+    background-color: #FFF8EB
+    overflow: hidden !important
+    .shape
+        position: absolute
+        right: 0
+        overflow: hidden !important
+
+    h2      
+        color:#e7346f
+        position: relative
+    h4
+        letter-spacing: 5px
+        position: relative
+    .container
+        position: relative
+
+        .p_card-body
+            background-color: white
+            border-bottom-left-radius: 10px
+            border-bottom-right-radius: 10px
+            border-bottom: 5px solid #3976d1
+            color: #0b0e24c4
+
+        
+        .p_card-top-img
+            width: 100%
+            img
+                width: 100%
+
+.map
+    height: 600px
+
+.newsletter
+    background: linear-gradient(90deg, #3976d1 0%, #63c0f7 100%) !important 
+    .row
+        width: 80%
+        margin: auto
+    .btn
+        background: linear-gradient(90deg, #c91652 0%, #ff8b5d 100%) !important 
+        border: none
+
+    .form-control
+        background-color: #ffffff56
+
+    ::placeholder
+        color: white
+
+.footer
+    background-image: url("../../public/img/footer/bg.jpg") 
+    background-size: cover
+
+
+    i
+        height: 42px
+        width: 42px
+        border-radius: 100%
+        display: flex
+        justify-content: center
+        align-items: center
+
+    .fa-facebook-f
+        background-color: #214b81
+    
+    .fa-twitter
+        background-color: #36a7db
+
+    .fa-instagram
+        background-color: #c03261
+
+    .fa-linkedin
+        background-color: #3274c0
+
+    .fa-pinterest-p
+        background-color: #be2525
+@media screen and ( min-width: 426px ) and ( max-width: 1100px )
+    
+    .info
+        font-size: 14px
+        ul
+            width: 100%
+            align-items: center
+
+
+    nav
+        .navbar-brand
+            margin: 0 !important
+        
+        .btn
+            margin: 0 !important
+
+    
+    #con_banner
+        width: 100% !important
+
+        .card
+            width: 50px
+
+    .about
+        .about_img
+            width: 80%
+            overflow: hidden !important
+            img
+                max-width: 100%
+        h4
+            font-size: 16px !important
+            margin-top: 20px
+            letter-spacing: 2px
+        p
+            margin-top: 15px
+    
+    .schedule
+        .text_accordion
+            width: 100%
+    
+
+    .speakers
+        .col-6
+            width: 100%
+        .container
+            flex-direction: column
+            .card_s
+                p
+                    width: 50%
+    .sponsors
+        .row
+            flex-wrap: wrap !important
+
+    .pricing
+        
+        .row
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            margin: auto
+        .col-4
+            width: 80%  
+            margin: 20px
+
+    .gifts
+        .row
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            margin: auto
+            text-align: center
+            width: 90%
+        .col-6
+            width: 100%
+
+        .img_gifts   
+            img   
+                left: 5%
+        .btn
+            margin: auto
+
+    .news
+        .row
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            margin: auto
+            text-align: center
+            width: 100%
+
+            .p_card-top-img
+                width: 100%
+                img
+                    width: 100%
+        .col-4
+            width: 100%
+            margin-bottom: 20px
+
+    .newsletter
+        .row
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            margin: auto
+            text-align: center
+            padding-top: 20px
+        .col-4, .col-5 
+            width: 100%
+        
+@media screen and ( min-width: 0px ) and ( max-width: 425px )
+    
+    .info
+        font-size: 14px
+        text-align: center
+        
+        ul
+            padding: 0px
+            align-items: center
+            width: 100%
+            li
+                padding: 5px !important
+                border: none
+                
+    nav
+        .navbar-brand
+            margin: 0 !important               
+        
+        .btn
+            margin: 0 !important
+
+    .banner
+        width: 100% !important
+        text-align: center
+
+        .card
+            width: 60px
+            margin: 10px !important
+            transform: translateX(-30px)
+        .col-6
+            width: 100% 
+
+            .row
+                justify-content: space-around
+
+        img
+            display: none
+        h4
+            br
+                display: none
+
+        button
+            transform: translateX(36px)
+    .about
+        .about_img
+            width: 400px
+            overflow: hidden !important
+            img
+                max-width: 400px
+        h4
+            font-size: 16px !important
+            margin-top: 20px
+            letter-spacing: 2px
+        p
+            width: 90%
+
+    .schedule
+        overflow: hidden !important
+        .col-6
+            width: 100%
+        .text_accordion
+            width: 100%
+
+    .speakers
+        .col-6, .col-5
+            width: 100%
+            margin: auto
+
+        .container
+            flex-direction: column
+            align-items: center
+            justify-content: center
+            .icon_speaker
+                display: flex
+                img
+                    margin: auto
+            .card_s
+                flex-direction: column
+                padding: 10px
+                p
+                    width: 100%
+
+    .sponsors
+        .row
+            flex-wrap: wrap !important
+            justify-content: center !important
+
+            &:nth-of-type(1)
+                flex-wrap: nowrap !important
+                margin-left: 20px
+        .img-spon
+            max-width: 90px !important
+            margin: 0px !important
+
+            img
+                max-width: 90px !important
+                
+    .pricing
+        
+        .row
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            margin: auto
+        .col-4
+            width: 100%         
+    
+    .gifts
+        .row
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            margin: auto
+            text-align: center
+            width: 90%
+        .col-6
+            width: 100%
+
+        .img_gifts   
+            height: 276px
+            img   
+                left: 0px
+        .btn
+            margin: auto
+
+    .news
+        .row
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            margin: auto
+            text-align: center
+            width: 100%
+
+        .col-4
+            width: 100%
+            margin-bottom: 20px
+
+    .newsletter
+        .row
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            margin: auto
+            text-align: center
+            padding-top: 20px
+            width: 100%
+        .col-4, .col-5 
+            width: 100%

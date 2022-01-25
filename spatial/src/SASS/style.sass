@@ -1,0 +1,208 @@
+$fa-font-path: "../../node_modules/@fortawesome/fontawesome-free/webfonts"
+@import "../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss"
+@import "../../node_modules/@fortawesome/fontawesome-free/scss/brands.scss"
+@import "../../node_modules/@fortawesome/fontawesome-free/scss/solid.scss"
+@import "../../node_modules/@fortawesome/fontawesome-free/scss/regular.scss"
+
+@import ../../node_modules/bootstrap/scss/bootstrap
+
+
+body
+    width: 100%
+
+    .header
+        background-image: url('../../public/img/banner.jpg') 
+        background-repeat: no-repeat
+        background-size: cover
+        position: relative
+        margin-bottom: 100px
+        width: 100%
+
+        .bg-bl
+            background-color: #1b17227c
+            width: 100%
+            height: 100%
+            position: absolute
+        .navbar
+
+            a
+                font-size: 1.375rem
+
+
+            span
+                font-weight: bold
+
+
+        .content
+            margin-top: 8%
+            padding-bottom: 250px
+
+
+            h1
+                font-size: 60px
+                z-index: 2
+            h2
+                font-weight: lighter
+                font-size: 28px
+                color: $gray-400
+                z-index: 2
+
+            a
+                font-size: 28px
+                font-weight: bold
+                z-index: 2
+
+    .container
+        
+        h1
+            font-size: 60px
+            color: #4e4e4e
+
+        h2
+            font-size: 28px
+
+        p
+            font-size: 20px
+            line-height: 40px
+
+    section
+        &:nth-of-type(2)
+            
+            margin-top: 100px
+            display: flex
+            justify-content: center
+            text-align: center
+            background-color: #F6F6F6
+
+            .card-text
+                font-weight: bolder
+
+            .buttons 
+                margin-bottom: 50px
+                a
+                    font-size: 22px
+                    font-weight: bolder
+
+        &:nth-of-type(3)
+            width: 75%
+            margin: auto
+            
+
+            h1
+                padding-top: 100px
+                font-size: 60px
+                color: #4e4e4e
+
+
+            h2
+                color: #a7a7a7
+
+
+            .img-fluid
+                border: 10px solid #F6F6F6
+                margin-top: 120px
+
+            .h1-1
+                font-size: 24px
+
+            .h2-1
+                font-size: 18px
+
+        .a-r
+            text-align: right
+        
+        &:nth-of-type(4)
+            background-image: url('../../public/img/banner.jpg')
+            background-repeat: no-repeat
+            background-size: cover
+            background-position: center
+            height: 400px
+            margin-top: 200px
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            position: relative
+
+            .bg-bl
+                background-color: #1b17227c
+                width: 100%
+                height: 100%
+                position: absolute
+            h1
+                color: white
+                font-size: 60px
+                z-index: 2
+            h2
+                color: #a7a7a7
+                font-weight: lighter
+                z-index: 2
+            a
+                z-index: 2
+
+        &:nth-of-type(5)
+            padding: 100px
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            background-color: #F6F6F6
+            
+            .icons
+                font-size: 40px
+                color: #929292
+
+                i
+                    padding: 30px
+
+            .copyright
+                color: #929292
+
+            
+@media screen and ( min-width: 0px ) and ( max-width: 426px)
+
+    body
+        .header
+            width: 100%
+            height: 100%
+            margin-bottom: 0px
+
+        section
+            &:nth-of-type(1)
+                .row
+                    flex-direction: column
+                    
+                    h1
+                        font-size: 25px
+
+                    h2
+                        font-size: 20px
+
+                    p
+                        font-size: 18px
+                        line-height: 29px
+
+        section
+            &:nth-of-type(2)
+                .row
+                    flex-direction: column
+                    .col-6
+                        width: 100%
+        section
+            &:nth-of-type(3)
+                .row
+                    flex-direction: column
+                    .col-3
+                        width: 100%
+                        .img-fluid
+                            width: 200px
+
+
+            &:nth-of-type(4)
+                h1  
+                    font-size: 30px
+
+            &:nth-of-type(5)
+                padding: 50px
+                
+                

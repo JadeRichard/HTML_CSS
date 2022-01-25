@@ -1,0 +1,587 @@
+@import "./_variables"
+@import "./_icons"
+@import "./_fonts"
+@import "../../node_modules/bootstrap/scss/bootstrap"   
+
+.title
+    font-family: 'Courgette'
+
+header
+    height: 110%
+    background-image: linear-gradient(rgba(7, 7, 12, 0.938),rgba(21, 21, 27, 0.87)), url("../../public/img/banner1.jpg")
+    background-size: cover
+
+    .nav_logo1
+        display: none
+
+    ul
+        border-top: 1px white solid
+        border-bottom: 1px white solid
+
+        a:hover
+            background-color: $danger
+    
+    img
+        width: 98px
+        height: 124px
+
+    .title
+        width: 60%
+
+    button
+        border: none !important
+        
+
+    #carouselExampleIndicators
+        padding-bottom: 10%
+
+    .carousel-indicators [data-bs-target]
+        width: 20px
+        height: 20px
+        border-radius: 100%
+
+    .decorationtop
+        height: 10px
+        width: 100%
+        background-image: url("../../public/img/bottom_decoration_img.png")
+
+section
+    background-image: url("../../public/img/main_bg.jpg")
+
+    .container
+        border: 2px solid #00000013
+        min-width: 90%
+        margin: auto
+        margin-left: 100px
+        margin-right: 100px
+        background-color: #fff
+        
+
+        .corner_r
+            display: flex
+            justify-content: end
+
+        h3
+            line-height: 60px
+
+        .menu
+            .nav-link
+                color: #d6d6d6
+                background-color: white
+                border-bottom: 2px solid #d6d6d6
+                &:focus 
+                    color: $danger
+                    background-color: white
+                    border-right: 5px solid $danger
+
+            i
+                font-size: 80px
+
+            img
+                border: 6px solid #d6d6d6
+                height: 150px
+                width: 150px
+                border-radius: 100%
+
+            #l_hr
+                padding-bottom: 10px
+                position: relative
+
+                ::after
+                    content: ""
+                    position: absolute
+                    bottom: 0
+                    left: 10px
+                    height: 2px
+                    width: 95%
+                    border-bottom: 1px dotted #dadada
+
+
+            #menu_text
+                font-size: 18px
+                margin: 0px
+                padding: 0px
+
+            #bg_lightgrey
+                background-color: #d6d6d6
+
+            .tab-content
+                border-left: 2px solid #d6d6d6
+
+    &:nth-of-type(2)
+        background-image: linear-gradient(rgba(7, 7, 12, 0.938),rgba(21, 21, 27, 0.87)), url("../../public/img/team_background.jpg")
+        background-size: cover
+        .container
+            border: none
+            min-width: 90%
+            margin: auto
+            margin-left: 100px
+            margin-right: 100px
+            background-color: #ffffff00
+
+            .row
+                img
+                    min-width: 300px 
+                    border-bottom: 1px solid #d6d6d663
+                
+    &:nth-of-type(3)
+        .btn
+            border: none !important
+        #book
+            background-image: url("../../public/img/book_table_bg.jpg")
+            background-size: cover
+            width: 60%
+            margin: auto
+            border-radius: 20px
+
+        input, select
+            border-radius: 15px
+            padding: 10px 20px 10px 20px
+
+        .badge
+            width: auto
+            border-radius: 15px
+            margin: auto
+            transform: translateY(-30px)
+
+        #blog
+            border: none
+            img
+                border-radius: 30px
+                border: 6px solid #a09f9f54
+            
+            .card-text, h5
+                width: 80%
+            
+    &:nth-of-type(4)
+        background-image: linear-gradient(rgba(7, 7, 12, 0.705),rgba(21, 21, 27, 0.712)), url("../../public/img/testimonials_background.jpg")
+        background-size: cover
+
+        .container
+            border: none
+            min-width: 80%
+            margin: auto
+            background-color: #ffffff00
+            
+            .icon_client
+                img
+                    margin: 0px !important
+                    width: 220px
+                    height: 220px
+                    border: 6px solid #b6b6b6
+                    border-radius: 100%
+            .col-3
+                border: 1px solid #b6b6b6
+                display: flex
+                flex-direction: column
+                border-radius: 20px
+                width: 30%
+
+    &:nth-of-type(5)
+        .container
+            border: none
+            min-width: 80%
+            margin: auto
+            background-color: #ffffff00
+
+        .card
+            border-radius: 20px
+        i
+            font-size: 70px
+
+.decorationbottom
+    height: 10px
+    width: 100%
+    background-image: url("../../public/img/footer_bottom_decoration_img.png")
+
+footer
+    background-image: url("../../public/img/footer_background.jpg")
+    background-size: cover
+    .container
+        border: none
+        min-width: 85%
+        margin: auto
+        background-color: #ffffff00
+
+        img
+            width: 100px
+            height: 100px
+            margin-top: 13px
+            margin-bottom: 13px
+
+        button
+            border: 1px solid white
+
+    .f_danger
+        height: 100px
+        width: 100%
+        background-color: $danger
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* MEDIA QUERIES */
+
+
+@media screen and ( min-width: 0px ) and ( max-width: 425px )
+
+
+    body
+        width: 100%
+        overflow-x: hidden !important
+
+        header
+            .nav_logo1
+                display: block
+                height: 84px
+                width: 70px
+                padding: 10px
+
+                img
+                    height: 84px
+                    width: 70px
+
+            .nav_logo
+                display: none
+            
+            .navbar-toggler
+                position: absolute
+                right: 20px
+                top: -70px
+            ul
+                margin: 0px
+                padding: 0px
+                
+                li
+                    font-size: 12px
+                    padding: 0px
+                    margin: 0px
+
+            .title
+                margin-top: 0px !important
+                padding-top: 0px !important
+
+            .btn
+                font-size: 12px !important
+
+        section
+            .container        
+                margin: 0px
+                padding: 0px !important
+                width: 100vw !important
+                overflow-x: hidden !important
+                .col-5
+                    padding: 0px !important
+                .row
+                    .col-3
+                        width: 5%
+                    
+                    
+
+                
+            #deco
+                transform: translateX(-20px) !important
+
+            #deco2
+                
+                transform: translateX(-70px) !important
+
+            .menu
+                
+                #col-display
+                    display: block !important
+
+
+                .nav
+                    display: flex
+                    flex-direction: row !important
+                    flex-wrap: nowrap
+                    
+                #v-pills-tab
+                    justify-content: center
+                    left: 0px
+                    padding: 0px !important
+                    
+
+                .nav-link
+                    border: none !important
+                    
+                    h3
+                        font-size: 20px
+
+                    i
+                        font-size: 50px
+
+                .tab-content
+                    border: none !important
+                    padding: 0px !important
+                
+                img
+                    border: 6px solid #d6d6d6
+                    height: 60px !important
+                    width: 60px!important
+                    border-radius: 100%
+
+                #l_hr
+                    width: 100%
+                    flex-direction: column
+                    align-items: center
+                    text-align: center
+                    justify-content: center
+
+            &:nth-of-type(2)
+                .container
+                    border: none
+                    min-width: 90%
+                    margin: 0px
+                    margin: auto
+                    background-color: #ffffff00
+                    .col-6
+                        width: 70% !important
+                    .row
+                        flex-direction: column
+                        align-items: center
+                        .col-3
+                            width: 100% !important
+
+            &:nth-of-type(3)
+                h3
+                    padding-top: 20px
+                #book
+                    width: 100%
+
+                    p
+                        display: flex
+                        flex-direction: column
+
+                    .col-4
+                        width: 40%
+
+                    input, select
+                        font-size: 14px !important
+                .badge
+                    font-size: 14px !important
+                    padding: 10px 5px 15px 5px !important
+                #row_blog
+                    flex-direction: column
+                    align-items: center    
+                    .col-5
+                        width: 80%
+                        p
+                            padding-bottom: 40px
+                
+            &:nth-of-type(4)
+                .col-12
+                    width: 100%
+                    margin: auto
+                    #deco
+                        display: flex
+                        margin: auto
+                        transform: translateX(0px) !important
+                #testimonials
+                    flex-direction: column
+
+                    .col-2
+                        width: 80%
+                        display: flex
+                        justify-content: center
+                        margin: 20px
+                    .col-3
+                        width: 80%
+                        margin: 20px
+        
+            &:nth-of-type(5)
+                .col-12
+                    width: 100%
+                    margin: auto
+                    #deco
+                        display: flex
+                        margin: auto
+                        transform: translateX(0px) !important
+                .col-5
+                    width: 95%
+
+    footer
+        text-align: center
+        .row
+            flex-direction: column
+            .col-4
+                width: 100%
+                margin: auto
+                margin-top: 20px
+                margin-bottom: 20px
+
+
+
+        .icons_footer
+            margin-top: 20px
+            margin-bottom: 20px
+            .row
+                flex-direction: row 
+            img
+                height: 80px
+                width: 80px
+                
+@media screen and ( min-width: 426px ) and ( max-width: 768px )
+    
+    header
+        .nav_logo1
+            display: block
+            height: 84px
+            width: 70px
+            padding: 10px
+
+            img
+                height: 84px
+                width: 70px
+
+        .nav_logo
+            display: none
+        
+        .navbar-toggler
+            position: absolute
+            right: 10px
+            top: -70px
+        ul
+            margin: 0px
+            padding: 0px
+            
+            li
+                font-size: 12px
+                padding: 0px
+                margin: 0px
+
+        .title
+            margin-top: 0px !important
+            padding-top: 0px !important
+
+        .btn
+            font-size: 12px !important
+
+    section
+        .container        
+            margin-left: 25px
+            margin-right: 25px
+
+            
+        #deco
+            transform: translateX(-50px) !important
+
+        .menu
+            
+            #col-display
+                display: block !important
+
+
+            .nav
+                display: flex
+                flex-direction: row !important
+                flex-wrap: nowrap
+                
+            #v-pills-tab
+                justify-content: space-around
+                
+
+            .nav-link
+                border: none !important
+
+            .tab-content
+                border: none !important
+                padding: 0px !important
+            
+            img
+                border: 6px solid #d6d6d6
+                height: 100px !important
+                width: 100px!important
+                border-radius: 100%
+
+            #l_hr
+                flex-direction: column
+                align-items: center
+                text-align: center
+
+        &:nth-of-type(2)
+            .container
+                border: none
+                min-width: 90%
+                margin: 0px
+                margin: auto
+                background-color: #ffffff00
+                .col-6
+                    width: 100% !important
+                .row
+                    flex-direction: column
+                    align-items: center
+                    .col-3
+                        width: 100% !important
+                
+        &:nth-of-type(3)
+            #book
+                width: 95%
+
+            .badge
+                font-size: 12px !important
+                padding: 10px 5px 15px 5px !important
+
+        &:nth-of-type(4)
+            .col-12
+                width: 100%
+                #deco
+                    display: flex
+                    margin: auto
+                    transform: translateX(0px) !important
+            #testimonials
+                flex-direction: column
+
+                .col-2
+                    width: 80%
+                    display: flex
+                    justify-content: center
+                    margin: 20px
+                .col-3
+                    width: 80%
+                    margin: 20px
+
+        &:nth-of-type(5)
+            .col-12
+                width: 100%
+                margin: auto
+                #deco
+                    display: flex
+                    margin: auto
+                    transform: translateX(0px) !important
+            .col-5
+                width: 95%  
+    
+    
+    footer
+        text-align: center
+        .row
+            flex-direction: column
+            .col-4
+                width: 100%
+                margin: auto
+                margin-top: 20px
+                margin-bottom: 20px
+
+
+
+        .icons_footer
+            margin-top: 20px
+            margin-bottom: 20px
+            .row
+                flex-direction: row 
